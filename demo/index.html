@@ -42,14 +42,15 @@
           <div class="small-12 columns">
             <div class="button" ng-click="dr_ctrl.upload_by_url()">Download</div>
           </div>
-          <div class="small-12 columns">
+          <div class="small-12 columns" ng-show="dr_ctrl.initialized">
             <img class="preview-image" ng-src="{{ dr_ctrl.preview_image }}">
           </div>
         </div>
       </div>
 
-      <div class="small-8 columns">
+      <div class="small-8 columns" ng-show="dr_ctrl.initialized">
         <nc-darkroom image="dr_ctrl.image"
+                     on-initialized="dr_ctrl.darkroom_initialized()"
                      on-crop="dr_ctrl.image_changed(image)"
                      history="true"
                      crop="{}"

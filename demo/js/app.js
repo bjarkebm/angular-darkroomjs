@@ -9,10 +9,12 @@
         var _me = this;
         _me.image = '';
         _me.preview_image = '';
+        _me.initialized = false;
 
         console.log(fabric);
 
         function load_new_image(file) {
+            _me.initialized = false;
             var oFReader = new FileReader();
             oFReader.readAsDataURL(file);
 
@@ -22,7 +24,12 @@
             };
         }
 
-        _me.image_changed = function(image) {
+        _me.darkroom_initialized = function () {
+            _me.initialized = true;
+            $scope.$apply();
+        };
+
+        _me.image_changed = function (image) {
             _me.preview_image = image;
             $scope.$apply();
         };
