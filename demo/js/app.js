@@ -10,6 +10,7 @@
         _me.image = '';
         _me.preview_image = '';
         _me.initialized = false;
+        _me.showDarkroom = true;
 
         console.log(fabric);
 
@@ -40,6 +41,10 @@
                 console.log(img.toString());
             });
             _me.image = _me.image_url;
+        };
+
+        _me.toggleDarkroom = function () {
+            _me.showDarkroom = !_me.showDarkroom;
         };
 
         $scope.$on('flow::fileAdded', function(event, $flow, flowFile) {
