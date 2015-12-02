@@ -1,9 +1,10 @@
 {
   "name": "angular-darkroom",
-  "version": "0.0.7",
-  "homepage": "https://github.com/natecox/angular-darkroomjs",
+  "version": "0.0.8",
+  "homepage": "https://github.com/bjarkebm/angular-darkroomjs",
   "authors": [
-    "Nathan Cox <akujin@akujin.com>"
+    "Nathan Cox <akujin@akujin.com>",
+    "Bjarke Buur Mortensen <bjarkebm@gmail.com>"
   ],
   "description": "AngularJS Directive for Darkroom.js",
   "main": "dist/js/angular-darkroom.min.js",
@@ -22,7 +23,7 @@
   "dependencies": {
     "darkroomjs": "~2.0.1",
     "angular": "1.3.4",
-    "fabric": "1.4.0"
+    "fabric": "~1.5.0"
   },
   "devDependencies": {
     "ng-flow": "~2.6.0",
