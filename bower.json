@@ -1,6 +1,6 @@
 {
   "name": "angular-darkroom",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "homepage": "https://github.com/bjarkebm/angular-darkroomjs",
   "authors": [
     "Nathan Cox <akujin@akujin.com>",
@@ -21,7 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "darkroomjs": "git@github.com:bjarkebm/darkroomjs.git#master",
+    "darkroomjs": "git://github.com/bjarkebm/darkroomjs.git#master",
     "angular": "1.3.4",
     "fabric": "~1.5.0"
   },
